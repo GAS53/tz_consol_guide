@@ -1,10 +1,9 @@
-from pprint import pprint
-import math
-
 from utils import get_rows, set_new_row
-from settings import ROW_PARAMS, APPROVAL_LIST, DB_FILE
+from settings import APPROVAL_LIST, DB_FILE
 
-def edit_func(old_row):
+
+def edit_func(old_row: str):
+    '''перезапись обновленного файла'''
     new_row = set_new_row()
     with open(DB_FILE, 'r') as f:
         old_data = f.read()
@@ -13,8 +12,8 @@ def edit_func(old_row):
         f.write(new_data)
     
 
-
 def run():
+    '''определение номера редактируемой строки'''
     li = get_rows()
     exit_flag = True
     while exit_flag:

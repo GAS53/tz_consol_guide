@@ -1,8 +1,9 @@
-from commands import get_list, new, edit
+from commands import get_list, new, edit, find
 from utils import check_db
 
 
 def run():
+    '''основной цикл'''
     check_db()
     flag = True
     while (flag):
@@ -20,6 +21,8 @@ def run():
             get_list.run()
         elif flag == 'e':
             edit.run()
+        elif flag == 'f':
+            find.run()
         else:
             print('неверно введена команда')
 
