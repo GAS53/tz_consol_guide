@@ -8,7 +8,6 @@ def run():
     '''вывод данных с разбивкой по страницам'''
     li = get_rows()
     max_len = len(li)
-    print(f'max len {max_len}')
     all_pages = math.ceil(max_len / PER_PAGE)
     
     print(f'всего страниц {all_pages}')
