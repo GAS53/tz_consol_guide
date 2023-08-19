@@ -1,10 +1,11 @@
-from commands import get_list, new
+from commands import get_list, new, edit
 from utils import check_db
+
 
 def run():
     check_db()
     flag = True
-    while(flag):
+    while (flag):
         flag = input('''\tq - выход
         l - вывести список на экран 
         n - новая запись
@@ -13,13 +14,15 @@ def run():
         
         if flag == 'q':
             break
-        elif flag== 'n':
+        elif flag == 'n':
             new.run()
-        elif flag== 'l':
+        elif flag == 'l':
             get_list.run()
+        elif flag == 'e':
+            edit.run()
         else:
             print('неверно введена команда')
-        
+
 
 if __name__ == '__main__':
     run()

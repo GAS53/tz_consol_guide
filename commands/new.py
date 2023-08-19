@@ -1,14 +1,6 @@
-from settings import DB_FILE, ROW_PARAMS, ROW_SEPARATOR
+from settings import DB_FILE
 
-
-def set_new_row():
-    result_row = ''
-    for val_name in ROW_PARAMS:
-        if result_row != '':
-            result_row += ROW_SEPARATOR
-        val = input(f'введите - {val_name}: ')
-        result_row += val
-    return result_row
+from utils import set_new_row
 
 
 def run():

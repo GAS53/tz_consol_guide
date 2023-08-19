@@ -24,3 +24,13 @@ def pprint_list(li):
     for i in li:
         if i:
             print(f'{i[0]}) {i[1]}')
+
+
+def set_new_row():
+    result_row = ''
+    for val_name in settings.ROW_PARAMS:
+        if result_row != '':
+            result_row += settings.ROW_SEPARATOR
+        val = input(f'введите - {val_name}: ')
+        result_row += val
+    return result_row

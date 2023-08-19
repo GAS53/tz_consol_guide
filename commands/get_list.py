@@ -18,7 +18,7 @@ def run():
         quit_flag = input('''q - выход, введите номер страници: ''')
         if quit_flag == 'q':
             break
-        elif quit_flag.isalnum() and int(quit_flag) != 0:
+        elif quit_flag.isdigit() and int(quit_flag) != 0:
 
             find_num = int(quit_flag)
             if find_num > all_pages:

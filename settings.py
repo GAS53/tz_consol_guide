@@ -6,3 +6,4 @@ DB_FILE = DB_PATH / 'db.txt'
 ROW_PARAMS = ['Фамилия', 'Имя', 'Отчество', 'Название организации', 'Телефон рабочий', 'Телефон личный (сотовый)']
 ROW_SEPARATOR = '*'
 PER_PAGE = 3
+APPROVAL_LIST = ['y', 'yes', 'да', 'д']
