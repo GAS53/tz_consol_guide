@@ -10,7 +10,7 @@ def edit_func(old_row: str):
     new_data = old_data.replace(old_row, new_row)
     with open(DB_FILE, 'w') as f:
         f.write(new_data)
-    
+
 
 def run():
     '''определение номера редактируемой строки'''

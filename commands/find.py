@@ -1,6 +1,7 @@
 from utils import get_preparated_rows, print_val_row, pprint_list
 from settings import ROW_SEPARATOR
 
+
 def run():
     '''поиск по значениям строк'''
     li = get_preparated_rows()
@@ -15,5 +16,3 @@ def run():
             if val in row[col]:
                 finded_rows.add(f'{ROW_SEPARATOR}'.join(row))
     pprint_list(finded_rows, easy_li=True)
-
-

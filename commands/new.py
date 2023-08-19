@@ -1,5 +1,4 @@
 from settings import DB_FILE
-
 from utils import set_new_row
 
 
